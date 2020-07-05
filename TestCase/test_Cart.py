@@ -4,7 +4,7 @@ from Common.Global import  *
 from Common.get_excel  import *
 import unittest,os, json
 from ddt import ddt,data,unpack
-list1=getData(r"E:\Autoapi\VodeZbapi\File\Datalogin_pwd.xlsx","ts")
+list1=getData(r"E:\apptool\testproject\File\Datalogin_pwd.xlsx","ts")
 @ddt
 class Test_Carts(unittest.TestCase):
     def setUp(self):
@@ -30,9 +30,7 @@ class Test_Carts(unittest.TestCase):
         }
         response = post(gouwu_url, data=self.data, headers=headers)
         a=response.json()[ 'msg']
-        # try:
         self.assertEqual(a, self.jg)
-        # except  Exception as e:
         def tearDown(self):
             pass
 if __name__ == '__main__':

@@ -9,7 +9,7 @@ class Test_login(unittest.TestCase):
         '''
         该接口是通过密码登录的接口
         '''
-        excel = xlrd.open_workbook(r"E:\Autoapi\VodeZbapi\File\Datalogin_pwd.xlsx")  # 打开文件地址   最好绝对路径
+        excel = xlrd.open_workbook(r"E:\apptool\testproject\File\Datalogin_pwd.xlsx")  # 打开文件地址   最好绝对路径
         table = excel.sheets()[0]
         for i in range(1, table.nrows):
             num = table.row_values(i)[0]

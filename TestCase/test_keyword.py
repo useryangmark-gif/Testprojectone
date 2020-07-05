@@ -8,7 +8,7 @@ from  Common.Global  import *
 from Common.get_excel import  *
 import unittest,os, json
 from ddt import ddt,data,unpack
-list1=getData(r"E:\Autoapi\VodeZbapi\File\Datalogin_pwd.xlsx","keywords")
+list1=getData(r"E:\apptool\testproject\File\Datalogin_pwd.xlsx","keywords")
 @ddt
 
 class Test_users(unittest.TestCase):

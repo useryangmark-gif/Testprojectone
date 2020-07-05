@@ -31,9 +31,6 @@ class Test_Adress(unittest.TestCase):
         self.res = res
         headers = headerss()
 
-        run = RunMain()
-        RES = run.run_main(url, "POST", self.data)
-        print(RES)
         # try:
         self.assertEqual(a, self.res)
 

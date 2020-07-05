@@ -6,7 +6,7 @@ from Common.Global import  *
 from Common.get_excel  import *
 import unittest,os, json
 from ddt import ddt,data,unpack
-list1=getData(r"E:\Autoapi\VodeZbapi\File\Datalogin_pwd.xlsx","address")
+list1=getData(r"E:\apptool\testproject\File\Datalogin_pwd.xlsx","address")
 @ddt
 class Test_Adress(unittest.TestCase):
     def setUp(self):
@@ -26,7 +26,6 @@ class Test_Adress(unittest.TestCase):
         headers=headerss()
         response = post(url=url, data=self.data, headers=headers)
         a=response.json()[ 'msg']
-        print(a)
         # try:
         self.assertEqual(a, self.res)
         # except  Exception as e:
