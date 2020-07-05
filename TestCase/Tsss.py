@@ -42,8 +42,3 @@ from email import encoders #转码
 '''
 Copy指定格式的文件到新文件夹
 '''
-import os
-import shutil
-import time
-start_time = time.time()
-# 需要被复制的文件夹
