@@ -1,5 +1,3 @@
-from datetime import date
-import  os
 
 import zipfile
 import os
@@ -53,17 +51,3 @@ start_time = time.time()
 old_path = r'D:\mywenjian'
 new_path = r'F:\mysql'
 all_list=os.listdir(old_path)
-for i in all_list:
-    print(i)
-    name, suffix = i.rsplit('.json')
-    name = name.replace('.','')
-    old_name = old_path + '\\' + i
-    new_name = new_path + '\\' + name + ".json"
-    shutil.copyfile(old_name, new_name)
-
-print(len(all_list))
-print(all_list)
-end_time = time.time()
-print(end_time-start_time,'秒')
-
-
