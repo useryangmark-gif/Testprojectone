@@ -39,6 +39,3 @@ from email import encoders #转码
 # ! python 3
 # -*- coding:utf-8 -*-
 # Autor: Li Rong Yang
-'''
-Copy指定格式的文件到新文件夹
-'''
