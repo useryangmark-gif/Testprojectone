@@ -10,7 +10,7 @@ sender = '2194095015@qq.com'
 receivers = '2194095015@qq.com'  # 接收邮件，可设置为你的QQ邮箱或者其他邮箱
 mail_pass = "poscbyuqfxqoecij"  # 授权码
 
-file_new = r"D:\Autoapi\oth\VodeZbapi\Run\report\reports.html"
+file_new = r"E:\Autoapi\VodeZbapi\Run\report\reports.html"
 f = open(file_new, 'rb')
 mail_body = f.read()
 f.close()

@@ -1,16 +1,11 @@
 #__author: Administrator
 #data:2020/6/23
-
-
-
-from Common.ts import *
 import unittest ,requests ,json,time,ddt
 from requests import post
 from Common.Global import  *
 from Common.get_excel  import *
 import unittest,os, json
 from ddt import ddt,data,unpack
-from Common.ts import *
 list1=getData(r"E:\Autoapi\VodeZbapi\File\Datalogin_pwd.xlsx","address")
 @ddt
 class Test_Adress(unittest.TestCase):
@@ -29,10 +24,6 @@ class Test_Adress(unittest.TestCase):
         self.data = eval(data)
         self.res = res
         headers=headerss()
-
-        run=RunMain()
-        RES=run.run_main(url,"POST",self.data)
-
         response = post(url=url, data=self.data, headers=headers)
         a=response.json()[ 'msg']
         print(a)

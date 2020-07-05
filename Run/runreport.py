@@ -8,11 +8,7 @@ testsuite=unittest.defaultTestLoader.discover(r"E:\Autoapi\VodeZbapi\TestCase",p
 #创建一个执行器
 
 
-
-
-
-
-runner = HTMLReport.TestRunner(report_file_name='各有所爱接口自动化报告第四版',  # 报告文件名，如果未赋值，将采用“test+时间戳”
+runner = HTMLReport.TestRunner(report_file_name='VODE’report01b版',  # 报告文件名，如果未赋值，将采用“test+时间戳”
                                output_path='report',  # 保存文件夹名，默认“report”
                                title='vode测试报告',  # 报告标题，默认“测试报告”
                                description='第一版报告描述',  # 报告描述，默认“测试描述”
