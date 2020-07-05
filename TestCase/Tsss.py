@@ -47,7 +47,3 @@ import shutil
 import time
 start_time = time.time()
 # 需要被复制的文件夹
-
-old_path = r'D:\mywenjian'
-new_path = r'F:\mysql'
-all_list=os.listdir(old_path)
