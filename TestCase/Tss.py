@@ -1,1 +1,5 @@
-
+f = open("C:\\Users\\Administrator\\Desktop\\out.txt", "w")
+f.write("hello,baba")
+f = open("C:\\Users\\Administrator\\Desktop\\out.txt", "r")
+res = f.read()
+print(res)

@@ -33,3 +33,14 @@ def headerss():
     return headers
 
 
+def logins(mobile, password):
+    data = {
+        "login_type": "mobile-pwd",
+        "mobile": mobile,
+        "password": password
+    }
+    session = requests.session()
+    response = session.post(login_url, data)
+    token = "bearer" + response.json()["data"]["access_token"]
+    session.headers['Authorization'] = token
+    return session

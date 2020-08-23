@@ -4,7 +4,7 @@ from email.header import Header
 
 sender = '2194095015@qq.com'
 receivers = ['2194095015@qq.com']  # 接收邮件，可设置为你的QQ邮箱或者其他邮箱
-mail_pass = "dpyftipjftugdjcb"    #授权码
+mail_pass = "ptceczcskgewdibj"  # 授权码
 
 # 三个参数：第一个为文本内容，第二个 plain 设置文本格式，第三个 utf-8 设置编码
 message = MIMEText('这是qq,邮箱的内容     你说有问题么，这是qq,邮箱的内容     你说有问题么这是qq,邮箱的内容     你说有问题么', 'plain', 'utf-8')
